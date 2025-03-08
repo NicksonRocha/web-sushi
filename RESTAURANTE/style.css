@@ -1,0 +1,104 @@
+
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.restaurant-logo {
+  width: 120px;   
+  height: 120px;  
+}
+
+.menu-item-img {
+  width: 100px;           
+  height: 100px;          
+  border-radius: 10px;   
+}
+
+.status {
+  font-size: 18px;  
+}
+
+.menu-item a {
+  text-decoration: none;  
+  color: black;           
+}
+
+.menu-item a:hover {
+  color: gray;    
+}
+
+
+.sticky-category {
+position: -webkit-sticky; 
+position: sticky;          
+top: 0;                   
+z-index: 1000;       
+background-color: white;   
+padding-top: 10px;         
+padding-bottom: 10px;     
+}
+
+.btn-box {
+background-color: black;  
+color: white;             
+border: none;             
+}
+
+.btn-box:hover {
+color: red;               
+background-color: black; 
+}
+
+.btn-depoimentos {
+background-color: white;       
+color: black;                   
+border: black 1px solid;        
+}
+
+.btn-depoimentos:hover {
+color: red;                     
+background-color: black;        
+border: 1px transparent solid;  
+}
+
+.btn-voltar {
+background-color: white;       
+border: 1px solid black;       
+color: black;                  
+}
+
+.btn-voltar:hover {
+background-color: black;       
+border: 1px solid black;       
+color: white;                 
+}
+
+.img-detalhes {
+height: 400px;        
+width: 400px;         
+object-fit: cover;   
+}
+
+.price {
+color: black;  
+}
+
+
+@media (max-width: 768px) {
+
+.btn-depoimentos {
+  margin-top: 10px; 
+}
+
+.img-detalhes {
+  height: 250px;    
+  width: 250px;     
+  object-fit: cover; 
+}
+
+.box-center-img {
+  display: flex;           
+  justify-content: center;  
+  align-items: center;      
+}
+}

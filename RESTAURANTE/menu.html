@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB SUSHI</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css"> 
+  
+</head>
+<body>
+  
+    <header class="bg-white p-4 border-bottom">  
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-2 text-center text-md-start">
+            
+              <img src="public/WEB-sushi.png" class="img-fluid rounded-circle restaurant-logo" alt="Logo do Restaurante">
+            </div>
+            <div class="col-12 col-md-10">
+              <h1 class="fs-1">WEB SUSHI</h1>
+                  
+              <p class="status text-danger fw-bold" id="status-restaurant">Fechado</p>
+              <nav>
+                <a href="sobre.html" class="btn btn-box">Sobre</a>
+            <a href="fotos.html" class="btn btn-box">Fotos</a>
+            <a href="contato.html" class="btn btn-box">Contato</a>
+            <a href="depoimentos.html" class="btn btn-depoimentos">Depoimentos</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+  <div class="container my-4 sticky-category">
+    <div class="row">
+      <div class="col-12">
+        <label for="category-select" class="form-label fs-5">Escolha uma categoria:</label>
+        <select class="form-select" id="category-select">
+          <option value="entradas">Entradas</option>
+          <option value="pratos-principais">Pratos Principais</option>
+          <option value="sobremesas">Sobremesas</option>
+          <option value="bebidas">Bebidas</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 id="entradas" class="fs-2">Entradas</h2>    
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Carpaccio%20de%20Salmão&price=30.00&description=Lâminas%20frescas%20de%20salmão%20temperadas&image=carpaccio_de_salmao.jpg">
+                Carpaccio de Salmão
+              </a>
+            </h3>
+            <p>Lâminas frescas de salmão temperadas.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 30,00</p>
+          </div>
+          <img src="public/carpaccio_de_salmao.jpg" class="img-fluid menu-item-img ms-3" alt="Carpaccio de Salmão">
+        </div>
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Ceviche&price=50.00&description=Peixe%20fresco%20marinado%20em%20limão%20e%20temperos&image=ceviche.jpg">
+                Ceviche
+              </a>
+            </h3>
+            <p>Peixe fresco marinado em limão e temperos.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 50,00</p>
+          </div>
+            <img src="public/ceviche.jpg" class="img-fluid menu-item-img ms-3" alt="Ceviche">
+        </div>
+
+        <h2 id="pratos-principais" class="fs-2">Pratos Principais</h2>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Hossomaki%20de%20Salmão&price=30.00&description=Rolinho%20de%20arroz%20e%20salmão&image=hossomaki-de-salmao.jpg">
+                Hossomaki de Salmão
+              </a>
+            </h3>
+            <p>Rolinho de arroz e salmão.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 30,00</p>
+          </div>
+          <img src="public/hossomaki-de-salmao.jpg" class="img-fluid menu-item-img ms-3" alt="Hossomaki de Salmão">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Hot%20Philadelphia&price=40.00&description=Enrolado%20frito%20com%20salmão%20e%20cream%20cheese&image=hot-philadelphia.jpg">
+                Hot Philadelphia
+              </a>
+            </h3>
+            <p>Enrolado frito com salmão e cream cheese.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 40,00</p>
+          </div>
+          <img src="public/hot-philadelphia.jpg" class="img-fluid menu-item-img ms-3" alt="Hot Philadelphia">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Jyo&price=50.00&description=Delicado%20sushi%20envolvido%20em%20peixe%20fresco&image=jyo.jpg">
+                Jyo
+              </a>
+            </h3>
+            <p>Delicado sushi envolvido em peixe fresco.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 50,00</p>
+          </div>
+          <img src="public/jyo.jpg" class="img-fluid menu-item-img ms-3" alt="Jyo">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Niguiri%20de%20Salmão&price=35.00&description=Bolinhos%20de%20arroz%20com%20salmão&image=niguiri-de-salmao.jpg">
+                Niguiri de Salmão
+              </a>
+            </h3>
+            <p>Bolinhos de arroz com salmão.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 35,00</p>
+          </div>
+          <img src="public/niguiri-de-salmao.jpg" class="img-fluid menu-item-img ms-3" alt="Niguiri de Salmão">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Temaki%20de%20Salm%C3%A3o&price=30.00&description=Temaki%20com%20salm%C3%A3o%20fresco%20e%20arroz%20japon%C3%AAs&image=temaki-de-salmao.jpg">
+                Temaki de Salmão
+              </a>
+            </h3>
+            <p>Temaki com salmão fresco e arroz japonês.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 30,00</p>
+          </div>
+          <img src="public/temaki-de-salmao.jpg" class="img-fluid menu-item-img ms-3" alt="Temaki de Salmão">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Uramaki%20Calif%C3%B3rnia&price=30.00&description=Cl%C3%A1ssico%20uramaki%20com%20kani,%20abacate%20e%20pepino&image=uramaki-california.jpg">
+                Uramaki Califórnia
+              </a>
+            </h3>
+            <p>Clássico uramaki com kani, abacate e pepino.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 30,00</p>
+          </div>
+          <img src="public/uramaki-california.jpg" class="img-fluid menu-item-img ms-3" alt="Uramaki Califórnia">
+        </div>
+
+        <h2 id="sobremesas" class="fs-2">Sobremesas</h2>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Sorvete%20com%20Oreo&price=15.00&description=Delicioso%20sorvete%20de%20creme%20com%20pedaços%20de%20Oreo&image=sorvete-com-oreo.jpg">
+                Sorvete com Oreo
+              </a>
+            </h3>
+            <p>Delicioso sorvete de creme com pedaços de Oreo.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 15,00</p>
+          </div>
+          <img src="public/sorvete-com-oreo.jpg" class="img-fluid menu-item-img ms-3" alt="Sorvete com Oreo">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Pudim&price=10.00&description=Pudim%20cremoso%20de%20leite%20condensado&image=pudim.jpg">
+                Pudim
+              </a>
+            </h3>
+            <p>Pudim cremoso de leite condensado.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 10,00</p>
+          </div>
+          <img src="public/pudim.jpg" class="img-fluid menu-item-img ms-3" alt="Pudim">
+        </div>
+
+        <h2 id="bebidas" class="fs-2">Bebidas</h2>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Água&price=5.00&description=1%20unidade&image=agua.jpg">
+                Água
+              </a>
+            </h3>
+            <p>1 unidade</p>
+            <p class="fs-5 fw-bold mb-0">R$ 5,00</p>
+          </div>
+            <img src="public/agua.jpg" class="img-fluid menu-item-img ms-3" alt="Água">
+        </div>
+
+        <div class="menu-item d-flex justify-content-between align-items-center border-bottom py-3">
+          <div class="menu-item-info">
+            <h3 class="fs-4">
+              <a href="detalhes.html?name=Refrigerante%20em%20lata&price=8.00&description=1%20unidade%20de%20qualquer%20tipo%20de%20refrigerante&image=refrigerantes.jpg">
+                Refrigerante em lata
+              </a>
+            </h3>
+            <p>Lata de refrigerante.</p>
+            <p class="fs-5 fw-bold mb-0">R$ 8,00</p>
+          </div>
+          <img src="public/refrigerantes.jpg" class="img-fluid menu-item-img ms-3" alt="Refrigerante">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+</html>
